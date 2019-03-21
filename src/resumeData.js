@@ -84,7 +84,13 @@ let resumeData = {
       },
       {
         "skillname":"Reactjs"
-      }
+      },
+      {
+        "skillname":"JavaScript"
+      },
+      {
+        "skillname":"Bootstrap 4.0"
+      },
     ],
     "portfolio":[
       {
