@@ -33,7 +33,7 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   background: #161415 url(../images/bg.png) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -52,7 +52,7 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 30px;
    text-align: center;
 }
 
@@ -280,11 +280,23 @@ ul#nav li.current a { color: #F06000; }
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
+.collapse {
+   display: none
+ }
+ .collapse.in {
+   display: block
+ }
+
 
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
-
+.allSkillsCategories {
+   margin-bottom: 0.5em;
+   margin-top: 1em;
+   font-size: 1.25em;
+   font-weight: bold;
+}
 .bars {
 	width: 95%;
 	float: left;
@@ -327,33 +339,69 @@ ul#nav li.current a { color: #F06000; }
 
 .photoshop {
   	width: 60%;
-  	-moz-animation: photoshop 2s ease;
+     -moz-animation: photoshop 2s ease;
+     animation: photoshop 2s ease;
   	-webkit-animation: photoshop 2s ease;
 }
 .illustrator {
   	width: 55%;
-  	-moz-animation: illustrator 2s ease;
+     -moz-animation: illustrator 2s ease;
+     animation: photoshop 2s ease;
   	-webkit-animation: illustrator 2s ease;
 }
 .wordpress {
   	width: 50%;
-  	-moz-animation: wordpress 2s ease;
+     -moz-animation: wordpress 2s ease;
+     animation: photoshop 2s ease;
   	-webkit-animation: wordpress 2s ease;
 }
 .css {
-  	width: 90%;
-  	-moz-animation: css 2s ease;
+  	width: 70%;
+     -moz-animation: css 2s ease;
+     animation: photoshop 2s ease;
   	-webkit-animation: css 2s ease;
 }
 .html5 {
   	width: 80%;
-  	-moz-animation: html5 2s ease;
+     -moz-animation: html5 2s ease;
+     animation: photoshop 2s ease;
   	-webkit-animation: html5 2s ease;
 }
 .jquery {
-  	width: 50%;
-  	-moz-animation: jquery 2s ease;
+  	width: 80%;
+     -moz-animation: jquery 2s ease;
+     animation: photoshop 2s ease;
   	-webkit-animation: jquery 2s ease;
+}
+.reactjs {
+   width: 75%;
+     -moz-animation: jquery 2s ease;
+     animation: photoshop 2s ease;
+  	-webkit-animation: jquery 2s ease;
+}
+.nodejs {
+   width: 80%;
+     -moz-animation: jquery 2s ease;
+     animation: photoshop 2s ease;
+  	-webkit-animation: jquery 2s ease;
+}
+.javascript {
+   width: 90%;
+     -moz-animation: jquery 2s ease;
+     animation: photoshop 2s ease;
+  	-webkit-animation: jquery 2s ease;
+}
+.mysql {
+   width: 65%;
+   -moz-animation: jquery 2s ease;
+   animation: photoshop 2s ease;
+   -webkit-animation: jquery 2s ease;
+}
+.mongodb {
+   width: 75%;
+   -moz-animation: jquery 2s ease;
+   animation: photoshop 2s ease;
+   -webkit-animation: jquery 2s ease;
 }
 
 @-moz-keyframes photoshop {
@@ -406,6 +454,31 @@ ul#nav li.current a { color: #F06000; }
   100% { width: 50%;  }
 }
 
+@keyframes photoshop {
+   0%   { width: 0px;  }
+   100% { width: 60%;  }
+ }
+@keyframes illustrator {
+   0%   { width: 0px;  }
+   100% { width: 55%;  }
+ }
+ @keyframes wordpress {
+   0%   { width: 0px;  }
+   100% { width: 50%;  }
+ }
+@keyframes css {
+   0%   { width: 0px;  }
+   100% { width: 90%;  }
+ }
+@keyframes html5 {
+   0%   { width: 0px;  }
+   100% { width: 80%;  }
+ }
+@keyframes jquery {
+   0%   { width: 0px;  }
+   100% { width: 50%;  }
+ }
+
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
@@ -425,8 +498,12 @@ ul#nav li.current a { color: #F06000; }
 }
 
 /* Portfolio Content */
-#portfolio-wrapper .columns { margin-bottom: 36px; }
+#portfolio-wrapper .columns { 
+   margin-bottom: 36px;
+}
 .portfolio-item .item-wrap {
+   border: #2B2B2B solid 2px;
+   border-radius: 0.75em;
    background: #fff;
    overflow: hidden;
    position: relative;
@@ -720,7 +797,7 @@ call-to-action .button {
 .flexslider .slides > li { position: relative; }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
+.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; backface-visibility: hidden}
 /* Suggested container for slide animation setups. Can replace this with your own */
 .flex-container { zoom: 1; position: relative; }
 
@@ -835,7 +912,7 @@ call-to-action .button {
    font: 15px/24px 'opensans-bold', sans-serif;
    margin: 12px 0;
    color: #EBEEEE;
-	display: inline-block;
+	/* display: inline-block; */
 	float: left;
    width: 26%;
 }
