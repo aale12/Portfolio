@@ -1,5 +1,5 @@
 let resumeData = {
-  "imagebaseurl": "images/bg.png",
+  "imagebaseurl": "images/bg.jpg",
   "name": "Anthony Le",
   "role": "Full Stack Web Develepor",
   "linkedinId": "aale12",
