@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const contactSchema = new Schema({
   content: { type: String, required: true },
   sender: { type: String, required: true },
+  senderContact: { type: String, required: true },
   dateSent: { type: Date }
 });
 
