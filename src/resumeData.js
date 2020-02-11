@@ -45,24 +45,29 @@ let resumeData = {
   ],
   "work": [
     {
-      "CompanyName": "River Oaks Nails & Spa",
-      "specialization": "Receptionist and Advertisement Manager",
+      "CompanyName": "Mastermind Parenting",
+      "specialization": "Mobile App Developer and Content Editor",
       "MonthOfLeaving": "Current",
-      "YearOfLeaving": "2019",
+      "YearOfLeaving": "",
       "Achievements": [
-        "Greeting and welcoming guests, provide them with a positive first impression of the business.",
-        "Drove advertising initiatives which increased awareness of River Oaks Nail & Spa by use of graphic design.",
-        "Researched, identified and pursued opportunities to increase sales of both current and new customers by approximately 10%."
+        "Develop and maintain iOS and Android Mobile App using Glide.",
+        "Content Library App of Video, Audio, and Documents made easily accessible to customers.",
+        "Video and Audio editing using Blender and Audacity.",
+        "Organization through Trello."
       ]
     },
     {
-      "CompanyName": "Quantum Physicians",
-      "specialization": "Medical Assistant Volunteer",
+      "CompanyName": "Avatar Mobility, Inc",
+      "specialization": "Junior Software Developer",
       "MonthOfLeaving": "Jul",
-      "YearOfLeaving": "2016",
+      "YearOfLeaving": "2019",
       "Achievements": [
-        "Worked alongside medical assistants with various medical projects such as handling correspondence and laboratory services.",
-        "Assisted with checking in patients, taking vital signs, and performing EKG"
+        "Boutique software development company specializing in development of enterprise solutions from Education to Healthcare to Telecommunications.",
+        "Worked on DCN (Distinguished Clubs Network) project enabling VIP Members from their network of golf clubs to share information to check availability and make reservations.",
+        "Responsible for development of Admin Portal.  Project utilizes Agile methodologies of 2 weeks sprint.",
+        "Participated in daily standup, backlog grooming, Retro, Demo, Sprint Planning, PI planning.",
+        "Development in QAT, Staging, and in bug fixes on JIRA based upon QA findings.",
+        "Tools: MySQL, JIRA, Confluence, Visual Studio Code"
       ]
     }
   ],
